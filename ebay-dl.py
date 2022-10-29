@@ -144,7 +144,7 @@ if __name__=='__main__':
             }
             items.append(item)
 
-    if args.csv:
+    if args.csv==True:
         field_names=list(items[0].keys())
         filename=args.search_term+'.csv'
         with open(filename,'w',encoding='utf-8') as f:
