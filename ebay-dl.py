@@ -22,7 +22,7 @@ def parse_items_sold(text):
     if 'sold' in text:
         return int(numbers)
     else:
-        return 0
+        return None
 
 def parse_price(text):
     '''
@@ -73,7 +73,7 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('search_term')
     parser.add_argument('--num_pages',default=10)
-    parser.add_argument('--csv',default=False)
+    parser.add_argument('--csv',action='store_true')
     #fixme
     args = parser.parse_args()
 
@@ -126,7 +126,7 @@ if __name__=='__main__':
             for tag in tags_free_returns: 
                 free_returns=True
 
-            items_sold=0
+            items_sold=None
             tags_items_sold=tag_item.select('.s-item__hotness, .s-item__additionalItemHotness')
             for tag in tags_items_sold:
                 if tag:
