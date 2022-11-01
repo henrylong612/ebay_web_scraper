@@ -12,7 +12,7 @@ where `'bouncy ball'` can be replaced by the search term of your choice. If your
 ```
 Henrys-MacBook-Air-4:project_03 hankilong$ /usr/local/bin/python3 "/Users/hankilong/Documents/Henry Long Claremont McKenna College/CMC Sophomore/FA 2022/CSCI/project_03/ebay-dl.py" 'bouncy ball' --num_pages=5
 ```
-where `5` can be replaced by the number of pages of your choice. By deafult, the program downloads the search queries in `.json` format. If I want to change the download format to `.csv`, I simply use the following command line:
+where `5` can be replaced by the number of pages I want. By deafult, the program downloads the search queries in `.json` format. If I want to change the download format to `.csv`, I simply use the following command line:
 ```
 Henrys-MacBook-Air-4:project_03 hankilong$ /usr/local/bin/python3 "/Users/hankilong/Documents/Henry Long Claremont McKenna College/CMC Sophomore/FA 2022/CSCI/project_03/ebay-dl.py" 'bouncy ball' --csv=True
 ```
