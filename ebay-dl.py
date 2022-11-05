@@ -99,7 +99,7 @@ if __name__=='__main__':
 
         tags_items=soup.select('.s-item')
 
-        for tag_item in tags_items:
+        for tag_item in tags_items[1:]:
 
             tags_name=tag_item.select('.s-item__title')
             name=None
